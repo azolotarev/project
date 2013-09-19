@@ -17,3 +17,7 @@ try {
 }
 
 ?>
+
+<html>
+<form method="get"><input type="text" name="name"><input type="submit" title="Нажми меня"></form>
+</html>
