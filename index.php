@@ -9,5 +9,11 @@ try {
 } catch (PDOException $e) {
     echo 'Подключение не удалось: ' . $e->getMessage();
 }
+    $sql = 'SELECT id, name FROM users';
+    $users = $dbh->query($sql)->fetchAll();
+    foreach($users as $row) {
+        print $row['id'] . "\t";
+        print $row['name'] . "\n";
+}
 
 ?>
